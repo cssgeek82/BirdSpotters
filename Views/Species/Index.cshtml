@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Fågelarter";
+}
+
+<main>
+    <h1>Fågelarter</h1>
+    <p>Här visas ett urval av de fågelarter som finns i Sverige. </p><br />
+
+    <article class="birdarticle">
+        <img class="birdimage" src="https://cdn.pixabay.com/photo/2016/05/27/18/31/chaffinch-1420407_1280.jpg" alt="Bofink" />
+        <div class="birdtext">
+            <h3>Bofink</h3>
+            <p>Bofink (Fringilla coelebs) är en liten tätting som tillhör familjen finkar och som är mycket talrik i Europa.</p>
+        </div>
+    </article>
+    <article class="birdarticle">
+        <img class="birdimage" src="https://cdn.pixabay.com/photo/2013/02/09/10/57/seagull-79658_1280.jpg" alt="Fiskmås" />
+        <div class="birdtext">
+            <h3>Fiskmås</h3>
+            <p>Fiskmås (Larus canus) är en fågel som tillhör familjen måsfåglar som häckar över stora delar av det norra halvklotet och merparten är flyttfåglar. </p>
+        </div>
+    </article>
+    <article class="birdarticle">
+        <img class="birdimage" src="https://cdn.pixabay.com/photo/2021/01/10/16/00/bird-5905555_1280.jpg" alt="Stare" />
+        <div class="birdtext">
+            <h3>Stare</h3>
+            <p>Stare (Sturnus vulgaris) är i Europa den vanligaste och mest utbredda företrädaren för familjen starar (Sturnidae).</p>
+        </div>
+    </article>
+    <article class="birdarticle">
+        <img class="birdimage" src="https://cdn.pixabay.com/photo/2020/12/31/05/02/sparrow-5875379_1280.jpg" alt="Sparv" />
+        <div class="birdtext">
+            <h3>Sparv</h3>
+            <p>Sparvfinkar (Passeridae) är en fågelfamilj som tillhör ordningen tättingar. I familjen placeras välkända arter som gråsparv och pilfink, men även stensparvar och snöfinkar. </p>
+        </div>
+    </article>
+    <article class="birdarticle">
+        <img class="birdimage" src="https://cdn.pixabay.com/photo/2015/10/12/14/53/kingfisher-983944_1280.jpg" alt="Kungsfiskare" />
+        <div class="birdtext">
+            <h3>Kungsfiskare</h3>
+            <p>Kungsfiskare (Alcedo atthis) är en fågelart inom familjen kungsfiskare (Alcedinidae) som vanligtvis delas in i sju eller åtta underarter och har en palearktisk häckningsutbredning.</p>
+        </div>
+    </article>
+    <article class="birdarticle">
+        <img class="birdimage" src="https://cdn.pixabay.com/photo/2018/02/26/23/12/common-raven-3184260_1280.jpg" alt="Korp" />
+        <div class="birdtext">
+            <h3>Korp</h3>
+            <p>Korp (Corvus corax) är en stor, svart kråkfågel. Den återfinns över större delen av norra halvklotet och är den mest spridda av alla kråkfåglar.</p>
+        </div>
+    </article>
+
+    <h3>Brukar du meddela oss när du ser en ny fågelart i Sverige?</h3>
+    <p>Klicka i så fall <a asp-controller="Species" class="favlink" asp-action="Favourite">HÄR!</a></p>
+
+</main>

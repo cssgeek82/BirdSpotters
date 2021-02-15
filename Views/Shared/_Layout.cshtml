@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bird Spotters - @ViewData["Title"] </title>
+    <link rel="stylesheet" href="~/css/headfoot.css" />
+    <link rel="stylesheet" href="~/css/main.css" />
+</head>
+<body>
+    <header class="mainheader">
+        <div class="headerlogo">
+            <a asp-controller="Home" asp-action="Index"><img class="logoimage" src="~/img/birdlogo.png" alt="Logotyp för Bird Spotters" /></a>
+        </div>
+
+        <nav class="mainnav" id="mainnav">
+            <ul>
+                <li class="hidebig"><a href="javascript:void(0)" class="closebtn hidebig" onclick="closeNav()">&times;</a></li>
+                <li class="mainli"><a asp-controller="Home" asp-action="Index">Startsida</a></li>
+                <li class="mainli"><a asp-controller="Observations" asp-action="Index">Fågelobservationer</a></li>
+                <li class="mainli"><a asp-controller="Species" asp-action="Index">Fågelarter</a></li>
+            </ul>
+        </nav>
+        <span id="menuButton" class="hidebig" role="navigation" onclick="openNav()">&#9776;</span>
+    </header>
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer class="mainfooter">
+        <div class="footercontent">
+            <p>Bird Spotters</p>
+            <p>Smedsgatan 32</p>
+            <p>Västerlånga</p>
+        </div>
+    </footer>
+
+    <script src="~/js/main.js"></script>
+</body>
+</html>

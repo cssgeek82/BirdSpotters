@@ -1,0 +1,58 @@
+[
+  {
+    "BirdSpecies": "Trana",
+    "BirdBefore": true,
+    "BirdLocation": "Mellersta Sverige",
+    "BirdDate": "2021-02-09T00:00:00",
+    "BirdTime": 1
+  },
+  {
+    "BirdSpecies": "Skata",
+    "BirdBefore": true,
+    "BirdLocation": "Södra Sverige",
+    "BirdDate": "2021-02-09T00:00:00",
+    "BirdTime": 3
+  },
+  {
+    "BirdSpecies": "Hök",
+    "BirdBefore": false,
+    "BirdLocation": "Norra Sverige",
+    "BirdDate": "2021-02-02T00:00:00",
+    "BirdTime": 0
+  },
+  {
+    "BirdSpecies": "Duvhök",
+    "BirdBefore": false,
+    "BirdLocation": "Mellersta Sverige",
+    "BirdDate": "2021-02-01T00:00:00",
+    "BirdTime": 3
+  },
+  {
+    "BirdSpecies": "Trana",
+    "BirdBefore": false,
+    "BirdLocation": "Mellersta Sverige",
+    "BirdDate": "2021-02-10T00:00:00",
+    "BirdTime": 1
+  },
+  {
+    "BirdSpecies": "Hök",
+    "BirdBefore": true,
+    "BirdLocation": "Norra Sverige",
+    "BirdDate": "2021-02-15T00:00:00",
+    "BirdTime": 0
+  },
+  {
+    "BirdSpecies": "Skata",
+    "BirdBefore": true,
+    "BirdLocation": "Södra Sverige",
+    "BirdDate": "2021-02-15T00:00:00",
+    "BirdTime": 2
+  },
+  {
+    "BirdSpecies": "Hök",
+    "BirdBefore": true,
+    "BirdLocation": "Södra Sverige",
+    "BirdDate": "2021-02-01T00:00:00",
+    "BirdTime": 1
+  }
+]

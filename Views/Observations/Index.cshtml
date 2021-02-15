@@ -1,0 +1,40 @@
+﻿@model IEnumerable<BirdSpotters.Models.ObservationsModel>
+@{
+    ViewData["Title"] = "Fågelobservationer";
+}
+
+<div class="observationcontent">
+
+    <partial name="_MenuAside" />
+
+    <main class="main">
+        <h1>Fågelobservationer</h1>
+
+
+        @foreach (var observation in Model)
+    {
+        <div class="observations">
+
+            <h2>@observation.BirdSpecies</h2>
+
+            @if (@observation.BirdBefore == true)
+            {
+            <p>Observerat fågel förut. </p>
+            }
+            else
+            {
+            <p>Ej observerat fågel förut. </p>
+            }
+
+            <p><span class="bold">Fågel skådad: </span> @observation.BirdLocation</p>
+
+            <p><span class="bold">Datum: </span> @observation.BirdDate.ToString("d")</p>
+          
+
+            <p><span class="bold">Tid på dygnet: </span> @observation.BirdTime</p>
+        </div>
+    }
+
+    </main>
+
+</div>

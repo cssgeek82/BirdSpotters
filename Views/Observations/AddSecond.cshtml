@@ -1,0 +1,47 @@
+﻿@model BirdSpotters.Models.ObservationsModel
+@{
+    ViewData["Title"] = "Lägg till observation";
+}
+
+<div class="observationcontent">
+
+    <partial name="_MenuAside" />
+
+    <main class="main">
+        <h1>Lägg till fågelobservation</h1>
+
+        <span class="formvalid"> @ViewBag.form </span><br /> 
+
+        <form method="post">
+            <label asp-for="BirdSpecies"></label><br />
+            <input asp-for="BirdSpecies" /><br />
+            <span asp-validation-for="BirdSpecies" class="formvalid"></span><br />
+
+            <label asp-for="BirdBefore"></label><br />
+            @Html.CheckBoxFor(m => m.BirdBefore) <br /> 
+            <span asp-validation-for="BirdBefore" class="formvalid"></span><br />
+
+            <label asp-for="BirdLocation"></label><br />
+            @Html.RadioButtonFor(m => m.BirdLocation, "Norra Sverige") Norra Sverige <br />
+            @Html.RadioButtonFor(m => m.BirdLocation, "Mellersta Sverige") Mellersta Sverige <br />
+            @Html.RadioButtonFor(m => m.BirdLocation, "Södra Sverige") Södra Sverige <br />
+            <span asp-validation-for="BirdLocation" class="formvalid"></span><br />
+
+            <label asp-for="BirdDate"></label><br />
+            <input asp-for="BirdDate" /><br />
+            <span asp-validation-for="BirdDate" class="formvalid"></span><br />
+
+            <label asp-for="BirdTime"></label><br /> <!-- HTML helper below -->
+            @Html.DropDownListFor(m => m.BirdTime,
+                new SelectList(Enum.GetValues(typeof(Times))),
+                "Välj tid på dygnet")
+            <br />
+            <span asp-validation-for="BirdTime" class="formvalid"></span><br />
+
+            <input type="submit" class="btn" value="Lägg till" /><br />
+
+        </form>
+
+    </main>
+
+</div>

@@ -1,0 +1,167 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #000000; 
+}
+.mainheader, .container, .mainfooter {
+    max-width: 1000px; 
+    margin: auto; 
+}
+/* Bigger screen-sizes*/
+@media screen and (min-width: 1000px) {
+    .hidebig {
+        display: none;
+    }
+}
+
+/* Header */
+.mainheader {
+    background-color: #ffffff;
+    color: #000;
+    display: grid;
+    border-bottom-right-radius: 200px; 
+}
+.headerlogo {
+    padding-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    grid-area: hlogo; 
+}
+.logoimage {
+    width: 100%;
+    max-width: 300px;
+}
+@media screen and (min-width: 999px) {
+    .mainheader {
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "hlogo hnav";
+    }
+}
+@media screen and (max-width: 999px) {
+    .mainheader {
+        grid-template-columns: 70% 30%;
+        grid-template-areas: "hlogo hnav";
+    }
+}
+
+/* Nav:  Bigger screen-sizes*/
+@media screen and (min-width: 1000px) {
+    .mainnav {
+        margin: 0;
+        padding-top: 60px;
+        grid-area: hnav;
+    }
+
+        .mainnav ul {
+            text-align: right;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-right: 20px;
+        }
+
+    .mainli {
+        background-color: #ffffff;
+        display: inline-block;
+        min-width: 150px;
+        border: 2px solid #000;
+        margin: 0;
+        margin-left: 30px;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+        .mainli:hover {
+            background-color: rebeccapurple;
+        }
+
+        .mainli a {
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+            .mainli a:hover {
+                color: #ffffff;
+            }
+}
+/* Nav:  Smaller screen-sizes*/
+@media screen and (max-width: 999px) {
+    .mainnav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        overflow-x: hidden;
+        transition: 1s;
+        padding-top: 10px;
+        color: #ffffff;
+    }
+
+        .mainnav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 5%;
+            font-size: 2em;
+            margin-left: 10px;
+            color: #fff;
+        }
+
+        .mainnav ul {
+            list-style-type: none;
+        }
+
+    .mainli {
+        padding: 5% 0% 0% 5%;
+        margin: 5% 0%;
+        font-size: 1.3em;
+    }
+
+        .mainli a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+    #menuButton {
+        font-size: 2em;
+        text-transform: uppercase;
+        color: #000000;
+        text-align: left;
+        padding-left: 5%;
+        grid-area: menub;
+        cursor: pointer;
+        grid-area: hnav;
+        justify-self: end; 
+        padding-right: 20px; 
+        padding-top: 10px; 
+    }
+}
+
+
+/* Footer */
+.mainfooter {
+    background-color: #ffffff;    
+}
+.footercontent {
+    background-color: #000000; 
+    color: #ffffff;
+    padding: 20px;
+    margin-left: 4px; 
+    border-top-right-radius: 99%; 
+}
+
+
+
+
+
